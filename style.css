@@ -18,6 +18,14 @@ body {
     box-sizing: border-box;
 }
 
+.menu_label {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
 .landing-bg {
     background-image: url(./img/Desktop.jpg);
     background-position: top;
