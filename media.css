@@ -133,13 +133,13 @@
 
 @media (max-width: 1070px) {
 
-    .hero_text{
+    .hero_text {
         width: 100%;
         text-align: center;
         align-items: center;
     }
 
-    .hero_text h1{
+    .hero_text h1 {
         font-size: 100px;
     }
 
@@ -173,11 +173,11 @@
         scale: 0.9;
     }
 
-    .card_text h2{
+    .card_text h2 {
         font-size: 32px;
     }
 
-    .card_text p{
+    .card_text p {
         font-size: 15px;
     }
 }
@@ -196,7 +196,7 @@
 
     .contact_content {
         width: 100%;
-        justify-content: center ;
+        justify-content: center;
     }
 
     .info_container {
@@ -215,32 +215,47 @@
 
 @media (max-width: 768px) {
 
-    nav {
-        padding-left: 0px;
+    html,
+    body {
+        margin: 0 auto;
+        overflow-x: hidden;
     }
-    .nav_options { 
-        width: 100%;
-        height: 100vh;
+
+    section {
+        overflow-y: scroll;
+    }
+
+    nav {   
+        position: fixed;
+        z-index: 6;
+    }
+
+    .nav_options {
         position: absolute;
-        top:100px;
-        border: 1px solid blanchedalmond;
-        border-top: none;
+        width: 45%;
+        height: 100%;
+        top: 0px;
+        right: 0px;
         flex-direction: column;
         background-color: #1b1b1b;
         z-index: 1;
-        padding: 90px 0px;
-        display: none;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 40px;
+        translate: 1000px;
+        transition: all .5s ease-in-out;
+        overflow-y: scroll;
     }
 
     .bar {
         width: 80%;
         height: 1px;
+        background-color: #ffffff5f;
     }
 
-    .bar span{
+    .bar span {
         width: 100%;
         height: 1px;
+        background-color: #ffffff5f;
     }
 
     .nav_list {
@@ -250,8 +265,10 @@
     }
 
     .nav_buttons {
+        flex-direction: column;
         height: 100px;
         scale: 1.1;
+        gap: 5px;
     }
 
     .menu_label {
@@ -262,11 +279,16 @@
     .menu_label img {
         height: 50px;
         width: 50px;
+        position: absolute;
+        z-index: 5;
+        right: 10px;
+        top: 10px;
     }
 
-    #menu_toggle:checked + .nav_options {
-        display: flex;
+    #menu_toggle:checked+.nav_options {
+        translate: 0px;
     }
+
 
     .contact_container {
         height: auto;
@@ -293,7 +315,7 @@
 
     .hero_text h1 {
         font-size: 70px;
-        
+
     }
 
     .hero_text p {
@@ -315,7 +337,7 @@
 }
 
 @media (max-width: 600px) {
-    .card_text h2{
+    .card_text h2 {
         font-size: 30px;
         width: 90%;
     }
@@ -340,7 +362,7 @@
 }
 
 @media (max-width: 425px) {
-    .hero_text{
+    .hero_text {
         padding: 0px;
         gap: 0px;
     }
@@ -356,7 +378,7 @@
         height: 150px;
     }
 
-    .hero_buttons button{
+    .hero_buttons button {
         height: 60px;
     }
 
