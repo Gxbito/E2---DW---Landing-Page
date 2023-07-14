@@ -215,25 +215,21 @@
 
 @media (max-width: 768px) {
 
-    html,
-    body {
-        margin: 0 auto;
-        overflow-x: hidden;
-    }
-
     section {
         overflow-y: scroll;
     }
 
-    nav {   
+    nav {
         position: fixed;
+        height: 100px;
+        background-color: #1b1b1b;
         z-index: 6;
     }
 
     .nav_options {
         position: absolute;
-        width: 45%;
-        height: 100%;
+        width: 100%;
+        height: 480px;
         top: 0px;
         right: 0px;
         flex-direction: column;
@@ -241,7 +237,7 @@
         z-index: 1;
         justify-content: center;
         gap: 40px;
-        translate: 1000px;
+        translate: 0px -500px;
         transition: all .5s ease-in-out;
         overflow-y: scroll;
     }
@@ -264,6 +260,13 @@
         gap: 12px;
     }
 
+    .logo img {
+        position: absolute;
+        z-index: 5;
+        left: 30px;
+        top: 5px;
+    }
+
     .nav_buttons {
         flex-direction: column;
         height: 100px;
@@ -281,24 +284,45 @@
         width: 50px;
         position: absolute;
         z-index: 5;
-        right: 10px;
-        top: 10px;
+        right: 30px;
+        top: 30px;
     }
 
     #menu_toggle:checked+.nav_options {
         translate: 0px;
     }
 
+    .footer_section {
+        overflow-y: hidden;
+        height: 100%;
+    }
+
+    .footer_container {
+        height: 100%;
+    }
 
     .contact_container {
-        height: auto;
+        height: 100%;
         gap: 40px;
+        padding: 10px 0px;
+    }
+
+    .contact_container h2 {
+        padding: 0px;
     }
 
     .contact_content {
         flex-direction: column;
         height: auto;
         gap: 20px;
+    }
+
+    .info {
+        padding-left: 0px;
+    }
+
+    .social_logos {
+        padding-left: 0px;
     }
 
     .footer_logo {
