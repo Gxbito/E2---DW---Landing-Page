@@ -215,10 +215,6 @@
 
 @media (max-width: 768px) {
 
-    section {
-        overflow-y: scroll;
-    }
-
     nav {
         position: fixed;
         height: 70px;
@@ -301,7 +297,8 @@
     }
 
     #menu_toggle:checked+.nav_options {
-        translate: 0px;
+        translate: 0px 0px;
+
     }
 
     .footer_section {
