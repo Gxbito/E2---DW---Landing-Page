@@ -236,7 +236,6 @@
         gap: 40px;
         translate: 0px -500px;
         transition: all .5s ease-in-out;
-        overflow-y: scroll;
     }
 
     .bar {
