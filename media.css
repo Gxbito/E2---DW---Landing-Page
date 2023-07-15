@@ -221,7 +221,7 @@
 
     nav {
         position: fixed;
-        height: 100px;
+        height: 70px;
         background-color: #1b1b1b;
         z-index: 6;
     }
@@ -232,6 +232,7 @@
         height: 480px;
         top: 0px;
         right: 0px;
+        padding-top: 20px;
         flex-direction: column;
         background-color: #1b1b1b;
         z-index: 1;
@@ -257,21 +258,32 @@
     .nav_list {
         flex-direction: column;
         height: auto;
-        gap: 12px;
+        gap: 16px;
+    }
+
+    .nav_list li {
+        font-size: 30px;
     }
 
     .logo img {
         position: absolute;
         z-index: 5;
-        left: 30px;
-        top: 5px;
+        left: 27px;
+        top: 0px;
+        height: 67px;
+        width: 48px;
     }
 
     .nav_buttons {
-        flex-direction: column;
+        /* flex-direction: column; */
         height: 100px;
-        scale: 1.1;
-        gap: 5px;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .nav_buttons a {
+        font-size: 27px;
+        scale: 0.9;
     }
 
     .menu_label {
@@ -284,8 +296,8 @@
         width: 50px;
         position: absolute;
         z-index: 5;
-        right: 30px;
-        top: 30px;
+        right: 27px;
+        top: 12px;
     }
 
     #menu_toggle:checked+.nav_options {
