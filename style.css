@@ -34,6 +34,8 @@ body {
     width: 100%;
 }
 
+/* Comienza el navbar */
+
 header {
     width: 100%;
     height: 100px;
@@ -76,10 +78,18 @@ nav {
 .nav_list li {
     list-style: none;
     font-family: "Poppins";
-    color: whitesmoke;
     font-size: 24px;
     cursor: pointer;
     position: relative;
+    animation: spawn-right 1s .1s forwards;
+}
+
+.nav_list a {
+    text-decoration: none;
+}
+
+.nav_list a:visited {
+    color: whitesmoke;
 }
 
 .nav_list li::after {
@@ -99,11 +109,11 @@ nav {
     scale: 1;
 }
 
-
 .bar {
     height: 40px;
     width: 1px;
     background-color: whitesmoke;
+    animation: spin 1s .1s forwards;
 }
 
 .nav_buttons {
@@ -111,7 +121,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
+    animation: spawn 1s 0.1s forwards;
 }
 
 .nav_buttons a {
@@ -132,10 +143,21 @@ nav {
     border: 1px solid whitesmoke;
 }
 
+.nav_buttons a:nth-child(1):hover {
+    background-color: #fff1f13b;
+    transition: all .2s ease;
+    font-weight: 800;
+}
+
 .nav_buttons a:nth-child(2) {
     color: #1b1b1b;
     border: 1px solid var(--hero-text);
     background-color: var(--hero-text);
+}
+
+.nav_buttons a:nth-child(2):hover {
+    transition: all .2s ease;
+    font-weight: 800;
 }
 
 .hero {
@@ -160,6 +182,7 @@ nav {
     font-weight: bold;
     font-size: 90px;
     color: var(--hero-text);
+    animation: spawn-left 1s .1s forwards;
 }
 
 .hero_text p {
@@ -169,6 +192,7 @@ nav {
     font-weight: 300;
     font-size: 24px;
     color: whitesmoke;
+    animation: spawn 1s 0.1s forwards;
 }
 
 .hero_buttons {
@@ -177,6 +201,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: spawn-bottom 1s .1s forwards;
 }
 
 .hero_buttons button {
@@ -192,12 +217,25 @@ nav {
     border: 1px solid var(--hero-text);
     background-color: var(--hero-text);
     color: #1b1b1b;
+    cursor: pointer;
+}
+
+.hero_buttons button:nth-child(1):hover {
+    transition: all .2s ease;
+    font-weight: 800;
 }
 
 .hero_buttons button:nth-child(2) {
     border: 1px solid whitesmoke;
     background-color: #00000000;
     color: whitesmoke;
+    cursor: pointer;
+}
+
+.hero_buttons button:nth-child(2):hover {
+    background-color: #fff1f13b;
+    transition: all .2s ease;
+    font-weight: 800;
 }
 
 .img_container {
@@ -210,7 +248,16 @@ nav {
     justify-content: center;
     align-items: center;
     margin-top: 35px;
+    animation: spawn 1s .1s forwards;
 }
+
+.img_container img {
+    animation: spawn-bottom .5s .1s forwards;
+}
+
+/* Termina el navbar*/
+
+/* Empieza el about us */
 
 .desc_container {
     margin: 0 auto;
@@ -249,6 +296,8 @@ nav {
     color: var(--bg-color);
 }
 
+/* Termina el about us */
+
 .barra {
     height: 1px;
     width: 100%;
@@ -263,6 +312,8 @@ nav {
     width: 90%;
     background-color: #fff1f1;
 }
+
+/* Empieza la seccion de cards */
 
 .card_section {
     margin: 0 auto;
@@ -345,6 +396,10 @@ nav {
     font-weight: 400;
     color: var(--bg-color);
 }
+
+/* Termina la seccion de cards */
+
+/* Empieza el footer */
 
 .footer_section {
     width: 100%;
@@ -472,3 +527,5 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
+/* Termina el footer */

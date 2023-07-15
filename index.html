@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./animation.css">
     <title>E2 - DW - Landing Page</title>
 </head>
 
@@ -13,6 +14,7 @@
     <div class="landing-bg">
         <header>
             <nav>
+                <!-- Display habilitada a partir de 768px de anchura -->
                 <div class="logo">
                     <img src="./img/Logo.png" alt="Power Horse Nutrition">
                 </div>
@@ -20,11 +22,13 @@
                     <img src="./img/menu-alt-01-svgrepo-com.svg" alt="">
                 </label>
                 <input type="checkbox" name="menu" id="menu_toggle">
+                <!-- Opciones del navbar -->
                 <div class="nav_options">
                     <ul class="nav_list">
-                        <li>Home</li>
-                        <li>About us</li>
-                        <li>Contact</li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-us">About us</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div class="bar">
                         <span></span>
@@ -55,7 +59,8 @@
         </article>
     </div>
     <article>
-        <section class="desc_container">
+        <!-- Seccion para el about us -->
+        <section class="desc_container" id="about-us">
             <h2>ABOUT US</h2>
             <p>Welcome to our premier protein supplement company! At our core, we are dedicated to providing top-notch
                 whey protein products to our valued customers. With a team of passionate experts committed to your
@@ -64,7 +69,8 @@
             </p>
         </section>
         <div class="barra"><span></span></div>
-        <section class="card_section">
+        <!-- Seccion para las cards -->
+        <section class="card_section" id="benefits">
             <div class="card_text">
                 <h2>Advantages of consuming protein.</h2>
                 <p>Su consumo regular y adecuado presenta varias ventajas y beneficios para la salud. Algunas de las
@@ -92,7 +98,8 @@
                 </div>
             </div>
         </section>
-        <section class="footer_section">
+        <!-- Seccion para el footer -->
+        <section class="footer_section" id="contact">
             <div class="footer_container">
                 <div class="contact_container">
                     <h2>Contact Us</h2>
